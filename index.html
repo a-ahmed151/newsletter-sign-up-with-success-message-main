@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+  <div class="main-content">
+    <div class="blog">
+      <h1>Stay updated!</h1>
+      <span>Join 60,000+ product managers receiving monthly updates on:</span>
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      <form action="./" method="dialog" id="sub-form">
+        <div class="label">
+          <label for="email">Email address</label>
+          <label for="email" id="invalid-email" style="display: none;">Invalid Email</label>
+        </div>
+        <input type="email" name="email" id="email" placeholder="email@company.com">
+        <button onclick="checkEmail()">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class="design">
+    </div>
+  </div>
+  <!-- Success message start -->
+  <div class="success-message" style="display: none;" >
+    <img src="assets/images/icon-success.svg" alt="">
+    <h2>Thanks for subscribing!</h2>
+    <p id="success-message">A confirmation email has been sent to <strong id="placeholder">ash@loremcompany.com</strong>. 
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button onclick="dissmissMessage()">Dismiss message</button>
+  </div>
+  <!-- Success message end -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/a-ahmed151">Abdelrahman Ahmed</a>.
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
